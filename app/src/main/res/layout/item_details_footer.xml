@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentBottom="true">
+    <RelativeLayout
+        android:id="@+id/ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_list"
+        android:background="#fff"
+        >
+        <TextView
+            android:id="@+id/special"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special Instructions"
+            android:layout_marginLeft="10dp"
+            android:background="#ffffff"
+            android:textSize="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#102f4e"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/special"
+    android:id="@+id/specialR"
+    android:background="#ededed">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/specialInst"
+            android:textSize="14dp"
+            android:hint="Example: No pepper / sugar / salt please"
+           android:layout_margin="10dp"
+            android:minLines="3"
+            android:background="#fff"
+            android:paddingLeft="10dp"/>
+</RelativeLayout>
+        <TextView
+            android:id="@+id/quan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/specialR"
+            android:background="#ffffff"
+            android:textSize="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#102f4e"/>
+
+        <RelativeLayout
+            android:id="@+id/quantRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quan"
+            android:background="#ededed">
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:textSize="16dp"-->
+                <!--android:textColor="#000"/>-->
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity"
+            android:textSize="14dp"
+            android:background="#ededed"
+            android:paddingLeft="10dp"
+            android:text="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add"
+            android:layout_centerVertical="true"
+          android:layout_marginRight="5dp"
+            android:text="Button"
+            android:background="#ededed"/>
+
+            <ImageButton
+              android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ededed"
+                android:src="@drawable/minus"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="Button"
+                android:layout_toLeftOf="@+id/add"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

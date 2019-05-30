@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CustomActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/menu_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/header"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <ExpandableListView
+            android:id="@+id/menu"
+            android:groupIndicator="@null"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/appbarlayout"
+            android:background="#fff"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    <ProgressBar
+        android:id="@+id/menu_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/rest_logo"
+        android:src="@drawable/facebook"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/appbarlayout"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

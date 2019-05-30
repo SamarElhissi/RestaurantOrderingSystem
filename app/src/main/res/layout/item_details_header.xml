@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/item_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/appbarlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/rest_cover"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fefdfd"
+        android:alpha="0.8">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Combo"
+        android:id="@+id/menu_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#0e2f50"
+        android:layout_toRightOf="@+id/rest_logo"
+        android:layout_marginLeft="10dp"
+        android:textSize="22dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1 regular size"
+        android:id="@+id/desc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rest_cover"
+        android:textColor="#0e2f50"
+        android:textSize="16dp"
+        android:background="#ffffff"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/rest_logo"
+        android:src="@drawable/facebook"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        />
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/desc">
+    <RadioGroup
+        android:id="@+id/itemsizes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    </RadioGroup>
+</RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CustomActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/header"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/appbarlayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mondologo"
+        android:layout_marginTop="25dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/about"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:padding="20dp" />
+</ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version: 0.13"
+        android:id="@+id/version"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

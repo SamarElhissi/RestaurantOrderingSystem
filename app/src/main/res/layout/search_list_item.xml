@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/item_image"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+
+        android:focusable="false"
+        android:background="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Pcs chicken combo               "
+        android:id="@+id/item_name"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/item_image"
+
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#0e2f50"
+        android:layout_toLeftOf="@+id/item_price"
+        android:layout_alignTop="@+id/item_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Regular side, 1 medium drink and 1biscuit "
+        android:id="@+id/item_desc"
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp"
+        android:layout_below="@+id/item_name"
+        android:layout_toRightOf="@+id/item_image"
+        android:layout_toEndOf="@+id/item_image"
+        android:layout_marginTop="3dp"
+        android:focusable="false"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="popeyes"
+        android:id="@+id/rest_name"
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp"
+        android:layout_below="@+id/item_desc"
+        android:layout_toRightOf="@+id/item_image"
+        android:layout_toEndOf="@+id/item_image"
+        android:layout_marginTop="3dp"
+        android:focusable="false"
+        android:textColor="#ff2f4e"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.79"
+        android:id="@+id/item_price"
+        android:textSize="15dp"
+        android:layout_above="@+id/item_desc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#0e2f50"
+        android:textStyle="bold"
+        android:focusable="false"/>
+
+</RelativeLayout>

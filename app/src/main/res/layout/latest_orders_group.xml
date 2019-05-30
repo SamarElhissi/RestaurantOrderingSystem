@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item name"
+        android:id="@+id/Item_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#102f4e"
+        android:layout_toLeftOf="@+id/item_price"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:id="@+id/item_price"
+        android:layout_alignTop="@+id/itemsize"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#102f4e"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:src="@drawable/pending"
+        android:id="@+id/tick"
+        android:layout_below="@+id/item_price"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popeyes"
+        android:id="@+id/rest_name"
+        android:textSize="14dp"
+        android:textColor="#cc2f4e"
+        android:layout_below="@+id/Item_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/orderAgain"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="instuctions"
+        android:id="@+id/instuctions"
+        android:textSize="14dp"
+        android:textColor="#aaa"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>
